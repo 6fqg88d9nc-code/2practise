@@ -1,38 +1,36 @@
-
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Менің сайтым</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
 <header class="header">
     <div class="container">
         <a href="#" class="logo">МЕНІҢ САЙТЫМ</a>
 
         <nav class="navigation">
-            <a href="#">Басты бет</a>
-            <a href="#">Біз туралы</a>
-            <a href="#">Қызметтер</a>
-            <a href="#">Байланыс</a>
+            <a href="#hero">Басты бет</a>
+            <a href="#about">Біз туралы</a>
+            <a href="#services">Қызметтер</a>
+            <a href="#contact">Байланыс</a>
         </nav>
 
-        <a href="#" class="header-button">Хабарласу</a>
+        <a href="#contact" class="header-button">Хабарласу</a>
     </div>
 </header>
 
-
 <main>
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero" id="hero">
         <div class="hero-content">
             <p class="subtitle">БІЗДІҢ САЙТҚА ҚОШ КЕЛДІҢІЗ!</p>
             <h1>Жаңа мүмкіндіктерді бірге ашайық</h1>
@@ -44,6 +42,36 @@
         </div>
     </section>
 
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-inner">
+            <div class="about-text">
+                <p class="subtitle">БІЗ ТУРАЛЫ</p>
+                <h2>Біз — білім мен технологияны біріктіретін команда</h2>
+                <p>
+                    Біздің мақсатымыз — қарапайым әрі түсінікті түрде
+                    заманауи білім мен технологияларды жеткізу.
+                    Әрбір адам өз әлеуетін аша алатындай орта жасаймыз.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">120+</span>
+                    <span class="stat-label">Аяқталған жоба</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Қуанышты қолданушы</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Жыл тәжірибе</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
     <section class="services" id="services">
         <div class="section-heading">
             <h2>Біздің мүмкіндіктеріміз</h2>
@@ -70,10 +98,27 @@
             </article>
         </div>
     </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <h2>Бізбен хабарласыңыз</h2>
+            <p>Сұрақтарыңыз болса — жазыңыз, біз жауап береміз!</p>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Атыңыз" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" rows="4" placeholder="Хабарламаңыз" required></textarea>
+                <button type="submit">Жіберу</button>
+            </form>
+        </div>
+    </section>
 </main>
 
+<footer class="footer">
+    <p>© 2026 Менің сайтым. Барлық құқықтар қорғалған.</p>
+</footer>
 
-
-    <script src="assets/js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
