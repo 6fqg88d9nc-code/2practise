@@ -8,3 +8,6 @@
     margin: 0;
     box-sizing: inherit;
 }
+body {
+    font-family: "Sixtyfour Convergence", monospace;
+}
